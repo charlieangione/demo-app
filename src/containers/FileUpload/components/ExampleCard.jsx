@@ -6,10 +6,10 @@ const ExampleCard = () => (
     <Card>
       <CardBody>
         <div className="card__title">
-          <h5 className="bold-text">Example title</h5>
-          <h5 className="subhead">Example subhead</h5>
+          <h5 className="bold-text">Shared File One</h5>
+          <h5 className="subhead">Sharing this file with the sales team</h5>
         </div>
-        <p>Your content here</p>
+        <p>Technical Selling Playbook</p>
       </CardBody>
     </Card>
   </Col>

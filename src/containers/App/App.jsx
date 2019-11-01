@@ -9,6 +9,7 @@ import Router from './Router';
 import store from './store';
 import ScrollToTop from './ScrollToTop';
 
+
 class App extends Component {
   constructor() {
     super();
@@ -24,6 +25,7 @@ class App extends Component {
       setTimeout(() => this.setState({ loaded: true }), 500);
     });
   }
+
 
   render() {
     const { loaded, loading } = this.state;

@@ -1,7 +1,8 @@
 .btn {
   border-radius: 5px;
-  padding: 10px 25px;
-  margin-bottom: 20px;
+  padding: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
   margin-right: 15px;
   transition: all 0.4s;
   font-size: 14px;
@@ -31,7 +32,7 @@
     display: flex;
     transition: all 0.3s;
     font-weight: 500;
-    color: #444444;
+    color: #5c5cff;
   }
 
   svg {
@@ -39,7 +40,7 @@
     width: 14px;
     margin: 2px 5px 0 0;
     transition: all 0.3s;
-    fill: #444444;
+    fill: #5c5cff;
   }
 
   &:hover, &:focus, &:active, &:active:focus {
@@ -73,11 +74,11 @@
     &:hover {
 
       p {
-        color: #646777;
+        color: #5c5cff;
       }
 
       svg {
-        fill: #646777;
+        fill: #5c5cff;
       }
     }
 
@@ -100,16 +101,16 @@
   }
 
   &.btn-secondary {
-    background-color: #e7e2e2;
-    border-color: #e7e2e2;
+    background-color: #5c5cff;
+    border-color: #5c5cff;
     color: #646777;
 
     &:before {
-      background-color: darken(#e7e2e2, 10%);
+      background-color: darken(#5c5cff, 10%);
     }
 
     &:hover, &:focus, &:active, &:active:focus {
-      border-color: darken(#e7e2e2, 10%);
+      border-color: darken(#5c5cff, 10%);
       color: #646777;
     }
 
@@ -120,7 +121,7 @@
   }
 
   &.btn-outline-secondary {
-    border-color: #e7e2e2;
+    border-color: #5c5cff;
 
     &, p {
 
@@ -137,30 +138,30 @@
     }
 
     &:before {
-      background-color: #e7e2e2;
+      background-color: #5c5cff;
     }
 
     &:hover, &:focus, &:active, &:active:focus {
       background: transparent;
-      border-color: #e7e2e2;
-      color: #444444;
+      border-color: #5c5cff;
+      color: #5c5cff;
 
       p {
-        color: #444444;
+        color: #5c5cff;
       }
 
       svg {
-        fill: #444444;
+        fill: #5c5cff;
       }
     }
   }
 
   &.btn-primary {
-    background-color: $color-blue;
-    border-color: $color-blue;
+    background-color: #5c5cff;
+    border-color: #5c5cff;
 
     &:before {
-      background-color: $color-blue-hover;
+      background-color: #5c5cff;
     }
 
     &:hover, &:focus, &:active, &:active:focus {
@@ -169,8 +170,8 @@
   }
 
   &.btn-outline-primary {
-    color: $color-blue;
-    border-color: $color-blue;
+    color: #5c5cff;
+    border-color: #5c5cff;
 
     p {
       color: $color-blue;
@@ -186,8 +187,8 @@
   }
 
   &.btn-success {
-    background-color: $color-accent;
-    border-color: $color-accent;
+    background-color: #5c5cff;
+    border-color: #5c5cff;
 
     &:before {
       background-color: $color-accent-hover;
@@ -199,15 +200,15 @@
   }
 
   &.btn-outline-success {
-    color: $color-accent;
-    border-color: $color-accent;
+    color: #5c5cff;
+    border-color: #5c5cff;
 
     p {
-      color: $color-accent;
+      color: #5c5cff;
     }
 
     svg {
-      fill: $color-accent;
+      fill: #5c5cff;
     }
 
     &:before {
@@ -281,17 +282,17 @@
   &.icon, &.icon.btn-secondary {
 
     &.disabled {
-      background-color: #f2f4f7;
-      border-color: #f2f4f7;
-      color: #dddddd;
+      background-color: #5c5cff;
+      border-color: #5c5cff;
+      color: #5c5cff;
       pointer-events: none;
 
       p {
-        color: #dddddd;
+        color: #5c5cff;
       }
 
       svg {
-        fill: #dddddd;
+        fill: #5c5cff;
       }
 
     }
@@ -299,18 +300,18 @@
 
   &.btn-primary, &.btn-danger, &.btn-warning, &.btn-success {
     p {
-      color: #ffffff;
+      color: #5c5cff;
     }
 
     svg {
-      fill: #ffffff;
+      fill: #5c5cff;
     }
   }
 
   &.btn-outline-primary, &.btn-outline-danger, &.btn-outline-warning, &.btn-outline-success {
 
     &:hover, &:focus, &:active, &:active:focus {
-      color: #ffffff;
+      color: #5c5cff;
       background: transparent;
     }
   }
@@ -322,11 +323,11 @@
     &:active, &:active:focus {
 
       p {
-        color: #ffffff;
+        color: #5c5cff;
       }
 
       svg {
-        fill: #ffffff;
+        fill: #5c5cff;
       }
     }
 

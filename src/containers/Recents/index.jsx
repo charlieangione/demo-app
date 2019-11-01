@@ -1,18 +1,20 @@
 import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import ExampleCard from './components/ExampleCard';
+import NonDisclosure from './components/NonDisclosure';
 
-const ExamplePage = () => (
+const Recents = () => (
   <Container className="dashboard">
     <Row>
       <Col md={12}>
-        <h3 className="page-title">Example Page Two</h3>
+        <h3 className="page-title">Recents</h3>
       </Col>
     </Row>
     <Row>
-      <ExampleCard />
+      <Col md={4}><ExampleCard /></Col>
+      <Col md={4}><NonDisclosure /></Col>
     </Row>
   </Container>
 );
 
-export default ExamplePage;
+export default Recents;

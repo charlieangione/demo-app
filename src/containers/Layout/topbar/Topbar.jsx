@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import TopbarSidebarButton from './TopbarSidebarButton';
 import TopbarProfile from './TopbarProfile';
 
+//  Cabinet = '/public/img/cabi.net-appcues.svg';
+
 class Topbar extends PureComponent {
   static propTypes = {
     changeMobileSidebarVisibility: PropTypes.func.isRequired,
@@ -21,9 +23,16 @@ class Topbar extends PureComponent {
               changeMobileSidebarVisibility={changeMobileSidebarVisibility}
               changeSidebarVisibility={changeSidebarVisibility}
             />
-            <Link className="topbar__logo" to="/dashboard_default" />
+            <Link className="topbar__logo" to="/all-files" />
           </div>
           <div className="topbar__right">
+            <Link
+              className="btn btn-outline-success"
+              to="/pricing"
+              onClick={window.Appcues.track('Clicked upgrade button')}
+            >
+            Get more storage
+            </Link>
             <TopbarProfile />
           </div>
         </div>

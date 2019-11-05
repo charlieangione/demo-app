@@ -9,7 +9,7 @@ const ExamplePage = () => (
       <Col>
         <h3 className="page-title">My Account</h3>
       </Col>
-      <Col md={4}>
+      <Col md={2}>
         <Link
           className="btn btn-outline-primary account__btn account__btn--small"
           to="/invite-team"

@@ -3,6 +3,13 @@ import { Col, Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import ExampleCard from './components/ExampleCard';
 
+
+function handleClick() {
+  console.log(handleClick);
+  (window.Appcues.track('Attempted to build a report'));
+}
+
+
 const ExamplePage = () => (
   <Container className="dashboard">
     <Row>
@@ -13,7 +20,7 @@ const ExamplePage = () => (
         <Link
           className="btn btn-outline-primary account__btn account__btn--small"
           to="/admin-console"
-          onClick={window.Appcues.track('Attempt to build report')}
+          onClick={handleClick}
         >
           Build Report
         </Link>

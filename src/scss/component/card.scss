@@ -1,3 +1,17 @@
+.player-wrapper {
+  position: relative; // Reset width
+  padding-top: 56.25%; // Reset height
+}
+.react-player {
+  position: absolute; // Set to relative
+  top: 0;
+  left: 0;
+}
+
+.react-player-two > div {
+  position: absolute; // Scaling will occur since parent is relative now
+}
+
 .card {
   width: 100%;
   padding-bottom: 30px;
@@ -59,3 +73,4 @@
     box-shadow: 0 10px 30px 1px rgba(0, 0, 0, 0.06);
   }
 }
+

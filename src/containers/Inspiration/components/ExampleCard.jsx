@@ -14,7 +14,7 @@ const ExampleCard = () => (
           <Player
             playsInline
             poster="/assets/poster.png"
-            src="https://youtu.be/mJnQLaengKw"
+            src="https://fast.wistia.com/embed/medias/ieykgil8u7.jsonp"
           />
         </div>
       </CardBody>

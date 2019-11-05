@@ -1,9 +1,10 @@
 import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
-import ExampleCard from './components/ExampleCard';
+// import ExampleCard from './components/ExampleCard';
 import AcceloOnboarding from './components/AcceloOnboarding';
 import YotpoOnboarding from './components/YotpoOnboarding';
 import MaybeTechOnboarding from './components/MaybeTechOnboarding';
+import VideoPlayer from './components/VideoPlayer';
 // import Player from './components/Player';
 
 const ExamplePage = () => (
@@ -14,8 +15,8 @@ const ExamplePage = () => (
       </Col>
     </Row>
     <Row>
-      <Col md={6}><ExampleCard /></Col>
-      <Col md={6}><ExampleCard /></Col>
+      <Col md={6}><MaybeTechOnboarding /></Col>
+      <Col md={6}><YotpoOnboarding /></Col>
     </Row>
     <Row>
       <Col md={6}><AcceloOnboarding /></Col>
@@ -23,7 +24,7 @@ const ExamplePage = () => (
     </Row>
     <Row>
       <Col md={6}><YotpoOnboarding /></Col>
-      <Col md={6}><ExampleCard /></Col>
+      <Col md={6}><VideoPlayer /></Col>
     </Row>
   </Container>
 );

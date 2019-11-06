@@ -4,7 +4,7 @@ import { Card, CardBody, Col } from 'reactstrap';
 import ReactPlayer from 'react-player';
 // import 'node_modules/video-react/dist/video-react.css';
 
-const YotpoOnboarding = () => (
+const Toast = () => (
   <Col md={12}>
     <Card>
       <CardBody>
@@ -26,4 +26,4 @@ const YotpoOnboarding = () => (
   </Col>
 );
 
-export default YotpoOnboarding;
+export default Toast;

@@ -1,6 +1,13 @@
 import React from 'react';
-import { Card, CardBody, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Card, CardBody, Col, Button } from 'reactstrap';
+// import { Link } from 'react-router-dom';
+
+function pushEvent() {
+  console.log(pushEvent);
+  (window.Appcues.track('Clicked Talked to Sales'));
+  (window.analytics.track('Clicked talked to Sales, sgmt'));
+  // (window.amplitude.getInstance().logEvent('Clicked to talk to sales, AMP'));
+}
 
 const PriceOptionTwo = () => (
   <Col>
@@ -13,7 +20,13 @@ const PriceOptionTwo = () => (
           <li>Unlocks the Admin Console</li>
           <li>API integration</li>
         </div>
-        <Link className="btn btn-outline-primary account__btn account__btn--small" to="/pricing">Talk to Sales</Link>
+        <Button
+          className="account__btn btn"
+          // to="/pricing"
+          onClick={pushEvent}
+        >
+          Talk to Sales
+        </Button>
       </CardBody>
     </Card>
   </Col>

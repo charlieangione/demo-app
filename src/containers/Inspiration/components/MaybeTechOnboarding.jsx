@@ -10,7 +10,7 @@ const MaybeTechOnboarding = () => (
       <CardBody>
         <div className="card__title">
           <h5 className="bold-text">MaybeTech</h5>
-          <h5 className="subhead">New user onboarding</h5>
+          <h5 className="subhead">New User Onboarding</h5>
           <div className="player-wrapper">
             <ReactPlayer
               className="react-player"

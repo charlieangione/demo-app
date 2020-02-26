@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardBody, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Card, CardBody, Col, Button } from 'reactstrap';
+// import { Link } from 'react-router-dom';
 
 const PriceOptionOne = () => (
   <Col>
@@ -13,13 +13,13 @@ const PriceOptionOne = () => (
           <li>Unlimited notes</li>
           <li>Zapier integrations</li>
         </div>
-        <Link
-          className="btn btn-outline-primary account__btn account__btn--small"
-          to="/pricing"
-          onClick={window.Appcues.track('Clicked Buy Now')}
+        <Button
+          className="btn account__btn"
+          // to="/pricing"
+          // onClick={window.Appcues.track('Clicked Buy Now')}
         >
           Buy Now
-        </Link>
+        </Button>
       </CardBody>
     </Card>
   </Col>

@@ -5,7 +5,7 @@ import { Collapse } from 'reactstrap';
 import TopbarMenuLink from './TopbarMenuLink';
 // import TopBarUpgradeButton from './TopBarUpgradeButton';
 
-const Ava = `${process.env.PUBLIC_URL}/img/ava.png`;
+const Charlie = `${process.env.PUBLIC_URL}/img/charlie.png`;
 
 export default class TopbarProfile extends PureComponent {
   constructor() {
@@ -23,7 +23,7 @@ export default class TopbarProfile extends PureComponent {
     return (
       <div className="topbar__profile">
         <button className="topbar__avatar" onClick={this.toggle}>
-          <img className="topbar__avatar-img" src={Ava} alt="avatar" />
+          <img className="topbar__avatar-img" src={Charlie} alt="avatar" />
           <p className="topbar__avatar-name">Charlie Angione</p>
           <DownIcon className="topbar__icon" />
         </button>

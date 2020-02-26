@@ -24,7 +24,7 @@ import InviteTeam from '../InviteTeam/index';
 const Pages = () => (
   <Switch>
     <Route path="/all-files" component={AllFiles} {...window.Appcues.anonymous()} />
-    <Route path="/recents" component={Recents} />
+    <Route path="/recents" component={Recents} {...window.Appcues.page('/recent-files')} />
     <Route path="/favorites" component={Favorites} />
     <Route path="/inspiration" component={Inspiration} />
     <Route path="/account-settings" component={AccountSettings} />
@@ -45,7 +45,7 @@ const wrappedRoutes = () => (
   <div>
     <Layout />
     <div className="container__wrap">
-      <Route path="/" component={Pages} />
+      <Route path="/" component={Pages} {...window.Appcues.page()} />
     </div>
   </div>
 );
@@ -54,8 +54,16 @@ const Router = () => (
   <MainWrapper>
     <main>
       <Switch>
-        <Route exact path="/" component={LogIn} {...window.Appcues.anonymous()} />
-        <Route exact path="/log_in" component={LogIn} {...window.Appcues.anonymous()} />
+        <Route exact path="/" component={LogIn} {...window.Appcues.anonymous()} {...window.Appcues.page('/home')} />
+        <Route
+          exact
+          path="/log_in"
+          component={LogIn}
+          {...window.Appcues.anonymous()}
+          {...window.analytics.identify()}
+          {...window.analytics.page()}
+          {...window.Appcues.page()}
+        />
         <Route path="/" component={wrappedRoutes} />
       </Switch>
     </main>

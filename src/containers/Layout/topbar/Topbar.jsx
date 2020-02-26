@@ -3,8 +3,14 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import TopbarSidebarButton from './TopbarSidebarButton';
 import TopbarProfile from './TopbarProfile';
+import bell from './bell.png';
 
-//  Cabinet = '/public/img/cabi.net-appcues.svg';
+function handleClick() {
+  console.log(handleClick);
+  (window.Appcues.track('Clicked Upgrade Button'));
+  (window.amplitude.getInstance().logEvent('Clicked upgrade button, AMP'));
+}
+
 
 class Topbar extends PureComponent {
   static propTypes = {
@@ -26,10 +32,11 @@ class Topbar extends PureComponent {
             <Link className="topbar__logo" to="/all-files" />
           </div>
           <div className="topbar__right">
+            <div className="topbar__widget" id="my-widget" img={bell} />
             <Link
               className="btn btn-outline-success"
               to="/pricing"
-              onClick={window.Appcues.track('Clicked upgrade button')}
+              onClick={handleClick}
             >
             Get more storage
             </Link>

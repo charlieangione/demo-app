@@ -32,7 +32,6 @@
     display: flex;
     transition: all 0.3s;
     font-weight: 500;
-    color: #5c5cff;
   }
 
   svg {
@@ -40,7 +39,6 @@
     width: 14px;
     margin: 2px 5px 0 0;
     transition: all 0.3s;
-    fill: #5c5cff;
   }
 
   &:hover, &:focus, &:active, &:active:focus {
@@ -78,7 +76,7 @@
       }
 
       svg {
-        fill: #5c5cff;
+        fill: #ffffff;
       }
     }
 
@@ -93,6 +91,7 @@
   &.btn-sm {
     padding: 5px 25px;
     font-size: 14px;
+    color: white;
   }
 
   &.btn-lg {

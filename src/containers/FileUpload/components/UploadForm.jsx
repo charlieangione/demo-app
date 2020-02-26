@@ -7,6 +7,13 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 // import renderCheckBoxField from '../../../shared/components/form/CheckBox';
 
+function handleClick() {
+  console.log(handleClick);
+  (window.Appcues.track('Clicked Upload on Form'));
+  (window.analytics.track('Clicked Upload on Form'));
+  // (window.amplitude.getInstance().logEvent('Clicked to upload form, AMP'));
+}
+
 class UploadForm extends PureComponent {
   static propTypes = {
     handleSubmit: PropTypes.func.isRequired,
@@ -62,7 +69,7 @@ class UploadForm extends PureComponent {
         <Link
           className="btn btn-primary account__btn account__btn--small"
           to="/my-documents"
-          onClick={window.Appcues.track('Uploaded File')}
+          onClick={handleClick}
         >
           Upload
         </Link>

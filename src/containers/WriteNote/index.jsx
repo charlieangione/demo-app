@@ -3,6 +3,13 @@ import { Col, Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import ExampleCard from './components/ExampleCard';
 
+function handleClick() {
+  console.log(handleClick);
+  (window.Appcues.track('Note Added Clicked Save'));
+  (window.analytics.track('Note added, clicked save'));
+  // (window.amplitude.getInstance().logEvent('Saved Note, AMP'));
+}
+
 const WriteNote = () => (
   <Container className="dashboard">
     <Row>
@@ -19,7 +26,7 @@ const WriteNote = () => (
       <Link
         className="btn btn-outline-primary account__btn account__btn--small"
         to="/notes"
-        onClick={window.Appcues.track('Added Note')}
+        onClick={handleClick}
       >
         Save
       </Link>

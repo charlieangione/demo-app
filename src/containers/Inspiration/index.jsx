@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
 // import ExampleCard from './components/ExampleCard';
-// import AcceloOnboarding from './components/AcceloOnboarding';
+import AcceloOnboarding from './components/AcceloOnboarding';
+import AppcuesOnboarding from './components/AppcuesOnboarding';
 import YotpoOnboarding from './components/YotpoOnboarding';
 import MaybeTechOnboarding from './components/MaybeTechOnboarding';
 // import VideoPlayer from './components/VideoPlayer';
@@ -19,7 +20,11 @@ const ExamplePage = () => (
       <Col md={6}><YotpoOnboarding /></Col>
     </Row>
     <Row>
+      <Col md={6}><AcceloOnboarding /></Col>
       <Col md={6}><Toast /></Col>
+    </Row>
+    <Row>
+      <Col md={6}><AppcuesOnboarding /></Col>
     </Row>
   </Container>
 );

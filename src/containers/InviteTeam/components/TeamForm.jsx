@@ -7,6 +7,11 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 // import renderCheckBoxField from '../../../shared/components/form/CheckBox';
 
+function handleClick() {
+  console.log(handleClick);
+  (window.Appcues.track('Clicked Invite on Form'));
+}
+
 class TeamForm extends PureComponent {
   static propTypes = {
     handleSubmit: PropTypes.func.isRequired,
@@ -62,7 +67,7 @@ class TeamForm extends PureComponent {
         <Link
           className="btn btn-primary account__btn account__btn--small"
           to="/account-settings"
-          onClick={window.Appcues.track('Added Team Member')}
+          onClick={handleClick}
         >
           Invite
         </Link>

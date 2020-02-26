@@ -11,7 +11,7 @@ const AllFiles = () => (
         <h3 className="page-title">All Files</h3>
       </Col>
       <Col md={2}>
-        <Link className="btn btn-outline-primary account__btn account__btn--small" to="/upload">Upload</Link>
+        <Link className="btn btn-outline-primary account__btn" to="/upload">Upload</Link>
       </Col>
     </Row>
     <Row>
